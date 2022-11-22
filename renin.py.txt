@@ -1,0 +1,14 @@
+a = int(input('Enter start: '))
+b = int(input("Enter end: "))
+cprime = 0
+ccomposite = 0
+for i in range(a,b+1):
+    for j in range(2,i):
+        if i%j==0:
+            print(i,'is composite')
+            ccomposite+=1
+            break
+    else:
+        print(i,'is prime')
+        cprime = cprime +1
+print(cprime,'prime and',ccomposite,'composite in this range')         
